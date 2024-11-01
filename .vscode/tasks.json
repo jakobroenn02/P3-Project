@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Copy Resources",
+            "type": "shell",
+            "command": "cp src/p3/*.fxml bin/p3/ && cp src/p3/*.css bin/p3/",
+            "problemMatcher": []
+        }
+    ]
+}
