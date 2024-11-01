@@ -4,8 +4,22 @@
         {
             "label": "Copy Resources",
             "type": "shell",
-            "command": "cp src/p3/*.fxml bin/p3/ && cp src/p3/*.css bin/p3/",
-            "problemMatcher": []
+            "windows": {
+                "command": "xcopy /Y /I \"src\\p3\\*.fxml\" \"bin\\p3\\\" & xcopy /Y /I \"src\\p3\\*.css\" \"bin\\p3\\\""
+            },
+            "osx": {
+                "command": "cp src/p3/*.fxml bin/p3/ && cp src/p3/*.css bin/p3/"
+            },
+            "linux": {
+                "command": "cp src/p3/*.fxml bin/p3/ && cp src/p3/*.css bin/p3/"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
         }
     ]
 }
